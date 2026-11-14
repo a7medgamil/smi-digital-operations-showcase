@@ -1,6 +1,6 @@
 # SMI Digital Operations — Institutional Case Study
 
-Superior Multiskills Institution (SMI) operates a digital environment spanning institutional access, learner platforms, academic services, registration, scholarship administration and learner engagement.
+Superior Multiskills Institution (SMI) operates across eight institutional domains, with a separately documented 12-item application and module inventory spanning institutional access, learner platforms, academic services, registration, scholarship administration and learner engagement.
 
 > Public institutional case study. This repository contains documentation only. It does not contain application source code, student or staff records, database exports, credentials or administrative access details.
 
@@ -26,7 +26,7 @@ The institutional inventory contains **12 named applications and modules**, grou
 - **CRM · Leads** — internal lead records and follow-up.
 - **Outreach** — an engagement workflow embedded in Secondary Training.
 
-See the detailed [system inventory](docs/SYSTEM-INVENTORY.md) and [operating architecture](docs/ARCHITECTURE.md). The [SMI institutional portfolio record](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/smi#digital-systems), [digital platform case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-digital-learning-platform) and [Registration Hub case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-registration-hub) present the related portfolio records.
+See the [eight-domain operating model](docs/OPERATING-MODEL.md), detailed [system inventory](docs/SYSTEM-INVENTORY.md) and [operating architecture](docs/ARCHITECTURE.md). The [SMI institutional portfolio record](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/smi#digital-systems), [digital platform case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-digital-learning-platform) and [Registration Hub case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-registration-hub) present the related portfolio records.
 
 ## Public route reachability
 
