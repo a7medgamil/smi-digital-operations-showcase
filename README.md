@@ -26,7 +26,7 @@ The institutional inventory contains **12 named applications and modules**, grou
 - **CRM · Leads** — internal lead records and follow-up.
 - **Outreach** — an engagement workflow embedded in Secondary Training.
 
-See the detailed [system inventory](docs/SYSTEM-INVENTORY.md) and [operating architecture](docs/ARCHITECTURE.md).
+See the detailed [system inventory](docs/SYSTEM-INVENTORY.md) and [operating architecture](docs/ARCHITECTURE.md). The corresponding [SMI portfolio case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/smi#digital-systems) presents the institutional record.
 
 ## Public route reachability
 
