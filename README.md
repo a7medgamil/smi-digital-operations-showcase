@@ -1,39 +1,61 @@
 # SMI Digital Operations — Institutional Case Study
 
-Superior Multiskills Institute (SMI) combines structured learning programs with digital workflows for learner access, speaking practice, attendance, assessment, and administration.
+Superior Multiskills Institution (SMI) operates a digital environment spanning institutional access, learner platforms, academic services, registration, scholarship administration and learner engagement.
 
-> Public institutional overview. No student information, private source code, internal database schema, credentials, or administrative access details are included.
+> Public institutional case study. This repository contains documentation only. It does not contain application source code, student or staff records, database exports, credentials or administrative access details.
 
-## Operating model
+## Digital application inventory
 
-- **Learning delivery:** structured core learning and guided secondary practice.
-- **Speaking practice:** paired audio-first rooms, guided rounds, and moderated discussion.
-- **Attendance:** session-based participation records and eligibility workflows.
-- **Assessment:** coursework, practice evaluation, and formal assessment workflows.
-- **Administration:** learner support, program oversight, and institutional reporting.
-- **Communications:** scholarship and learner re-engagement workflows, subject to separate integration and approval gates.
+The institutional inventory contains **12 named applications and modules**, grouped by their role:
 
-## Digital components
+### Institutional access and learner services
+- **SMI Main Website** — public institutional entry point.
+- **Scholarships Portal** — public scholarship information and access.
+- **Course Subscription** — learner-facing course subscription and enrollment.
+- **SCI Appointment System** — appointment coordination.
 
-### MIYTO Smart Rooms
+### Learning and assessment
+- **Secondary Training Platform** — learner access to SMI's secondary training periods.
+- **Student Gateway · Core Periods** — the student entry point for core-period learning and academic activity.
+- **Student Examinations** — an examination module inside Student Gateway, not a separate application.
 
-MIYTO supports paired, level-aware audio practice and structured speaking sessions. See the public [MIYTO case study](https://github.com/a7medgamil/miyto-smart-rooms-showcase).
+### Registration, administration and engagement
+- **Registration Hub** — unified registration workflow; current release state and route remain unverified.
+- **Registration Control Center** — staff-facing registration review and administrative control.
+- **Scholarship Control Center** — staff-facing scholarship administration.
+- **CRM · Leads** — internal lead records and follow-up.
+- **Outreach** — an engagement workflow embedded in Secondary Training.
 
-### Learner and academic workflows
+See the detailed [system inventory](docs/SYSTEM-INVENTORY.md) and [operating architecture](docs/ARCHITECTURE.md).
 
-The broader digital environment includes learner access, attendance, learning materials, assessment, and reporting workflows. This document describes operating scope rather than exposing private implementation or student records.
+## Public route reachability
 
-### Communications tooling
+The following public routes returned **HTTP 200** in a route-level check on **15 November 2026**:
 
-A separate re-engagement mail module has been prepared as a standalone package. It is **not deployed or integrated with a live database or SMTP service**; no campaign email has been sent by that module. Any future use requires verified integration, content approval, and operational testing.
+- [SMI Main Website](https://smi-platform.org/)
+- [Secondary Training](https://smi-platform.org/smi-secondary-training/)
+- [Student Gateway](https://smi-platform.org/student-gateway/)
+- [Scholarships](https://smi-platform.org/scholarships/)
+- [Course Subscription](https://smi-platform.org/course-subscribe/)
+- [SCI Appointments](https://smi-platform.org/appointments/)
+
+HTTP 200 confirms that a route responded at the time of the check. It does **not** certify end-to-end workflow correctness, integrations, authentication rules, data consistency or production readiness.
+
+## MIYTO Smart Rooms
+
+MIYTO supports paired, level-aware audio practice and structured speaking sessions. Its product and engineering record is maintained separately in the public [MIYTO Smart Rooms showcase](https://github.com/a7medgamil/miyto-smart-rooms-showcase).
 
 ## Governance and privacy
 
-- Learner and staff personal information remains private.
-- Administrative access details and internal endpoints are not published.
-- Product plans are distinguished from implemented and verified behavior.
-- Each system has its own testing, deployment, and approval boundary.
+- Public routes are listed; staff-only administrative URLs are deliberately withheld.
+- Learner, staff, applicant and scholarship records remain private.
+- Internal source code, database schemas, credentials and infrastructure details are not included.
+- Examinations and Outreach are identified as embedded modules, not separate deployments.
+- Inventory presence is not treated as proof of release or functional acceptance.
+- The architecture diagram groups service responsibilities; it is not a verified data-flow or shared-database diagram.
 
-This repository contains documentation only, not the SMI platform source or student data.
+## Evidence boundary
 
-© 2026 Superior Multiskills Institute. All rights reserved.
+The route check is a reachability observation. Module-level test reports, approved interface captures and anonymized operational evidence must be reviewed separately before stronger implementation or outcome claims are made.
+
+© 2026 Superior Multiskills Institution. All rights reserved.
