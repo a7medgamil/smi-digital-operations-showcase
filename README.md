@@ -30,6 +30,10 @@ See the [eight-domain operating model](docs/OPERATING-MODEL.md), detailed [syste
 
 For technical-project and product-management assessment, see the [Product & Delivery Evidence Packet](docs/PRODUCT-DELIVERY-EVIDENCE.md), which distinguishes verified inventory facts, proposed acceptance criteria, missing measurement evidence and privacy constraints. The [SMI institutional portfolio record](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/smi#digital-systems), [digital platform case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-digital-learning-platform) and [Registration Hub case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-registration-hub) present the related portfolio records.
 
+## Independent runnable engineering proof
+
+The [Operations Case Lab](demo/operations-case-lab/README.md) adds an original, local-only synthetic workflow demonstration alongside this institutional documentation. It uses fictional records and has no SMI production connection. See the [engineering boundary and decisions](docs/INDEPENDENT-OPERATIONS-ENGINEERING.md).
+
 ## Public route reachability
 
 The following public routes returned **HTTP 200** in a route-level check on **15 November 2026**:
