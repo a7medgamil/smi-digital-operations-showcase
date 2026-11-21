@@ -2,7 +2,7 @@
 
 Superior Multiskills Institution (SMI) operates across eight institutional domains, with a separately documented 12-item application and module inventory spanning institutional access, learner platforms, academic services, registration, scholarship administration and learner engagement.
 
-> Public institutional case study. This repository contains documentation only. It does not contain application source code, student or staff records, database exports, credentials or administrative access details.
+> Public institutional case study **plus a separate, original synthetic workflow demo**. The demo is not production SMI source or a live Registration Hub. No real student/staff records, database exports, credentials, internal routes or administrative access details are published.
 
 ## Digital application inventory
 
@@ -32,7 +32,13 @@ For technical-project and product-management assessment, see the [Product & Deli
 
 ## Independent runnable engineering proof
 
-The [Operations Case Lab](demo/operations-case-lab/README.md) adds an original, local-only synthetic workflow demonstration alongside this institutional documentation. It uses fictional records and has no SMI production connection. See the [engineering boundary and decisions](docs/INDEPENDENT-OPERATIONS-ENGINEERING.md).
+The [Operations Case Lab](demo/operations-case-lab/README.md) is an original, **runnable local-only simulation** with new/returning fictional applications, a staff decision queue, optimistic-version conflict handling, idempotent replay, in-memory audit history and synthetic metrics. It is not SMI's real Registration Hub, authentication service or database.
+
+**Verified evidence (21 November 2026):** 39/39 automated Node tests passed, 38 automated Chrome assertions passed across 1440px and 390px viewports, and the [main-branch GitHub Actions run succeeded](https://github.com/a7medgamil/smi-digital-operations-showcase/actions/runs/44895321053) on the published demo. Review the [QA report](demo/operations-case-lab/QA_REPORT.md), [machine-readable browser results](demo/operations-case-lab/qa-artifacts/browser-results.json), [desktop screenshot](demo/operations-case-lab/qa-artifacts/operations-1440.png), [mobile screenshot](demo/operations-case-lab/qa-artifacts/operations-390.png) and [engineering boundary and decisions](docs/INDEPENDENT-OPERATIONS-ENGINEERING.md).
+
+[![Synthetic Operations Case Lab desktop preview](demo/operations-case-lab/qa-artifacts/operations-1440.png)](demo/operations-case-lab/README.md)
+
+*The tests prove this independent sample's behavior under the listed conditions, not SMI production performance, privacy certification or deployment.*
 
 ## Public route reachability
 
