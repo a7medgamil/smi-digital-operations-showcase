@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>Operations Case Lab · Independent simulation</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to workspace</a>
+  <header class="topbar wrap">
+    <a class="brand" href="/" aria-label="Operations Case Lab home"><span class="mark" aria-hidden="true">o.</span> Operations <strong>Case Lab</strong></a>
+    <span class="local-label"><span aria-hidden="true">●</span> Local simulation</span>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div><p class="eyebrow">INDEPENDENT ENGINEERING / WORKFLOW 01</p>
+      <h1 id="hero-title">Decisions,<br>with a trace.</h1>
+      <p class="intro">A small operations desk. A complete decision trail.<br>Explore how a fictional intake becomes a reviewed case.</p></div>
+      <aside class="boundary"><span class="eyebrow">THE EVIDENCE BOUNDARY</span>
+        <p><strong>Independent synthetic operations proof — fictional records, not SMI production</strong></p>
+        <p>Original demonstration. No real people, integrations or delivery. Everything lives in memory and resets on reload.</p>
+        <div class="clock"><span>Virtual clock · no timezone</span><output id="clock">V+0000m</output></div>
+      </aside>
+    </section>
+    <section class="controlbar" aria-label="Simulation controls">
+      <div><label for="role">Act as</label><select id="role"><option value="staff">Staff · review cases</option><option value="learner">Learner · submit intake</option></select></div>
+      <p>Role switch is a local simulation, not authentication.</p>
+      <button id="reset" class="quiet">Reset simulation</button>
+    </section>
+    <div id="notice" class="notice" role="status" aria-live="polite" aria-atomic="true">Six fictional cases are ready. Select a case to inspect its decisions.</div>
+    <section aria-labelledby="metrics-title" class="metrics-section">
+      <div class="section-line"><h2 id="metrics-title">At a glance</h2><span>SIMULATION · ALL RECORDS</span></div>
+      <div id="metrics" class="metrics"></div>
+    </section>
+    <div id="workspace" class="workspace" tabindex="-1">
+      <section class="panel intake" aria-labelledby="intake-title">
+        <p class="eyebrow">01 / INTAKE</p><h2 id="intake-title">One clear starting point.</h2>
+        <p>Generate the next fictional applicant. Names are assigned as Demo 01, Demo 02…</p>
+        <form id="intake-form">
+          <fieldset id="intake-fields"><legend>Applicant journey</legend>
+            <label class="choice"><input type="radio" name="journey" value="new" checked><span><strong>New applicant</strong><small>Start a fictional application.</small></span></label>
+            <label class="choice"><input type="radio" name="journey" value="returning"><span><strong>Returning applicant</strong><small>Continue a fictional learning journey.</small></span></label>
+            <p id="journey-help" class="inset">New: a synthetic starter checklist will be reviewed.</p>
+            <button type="submit" class="primary full">Submit fictional intake <span aria-hidden="true">↗</span></button>
+          </fieldset>
+        </form>
+        <button id="new-applicant" class="quiet full" disabled>Start another fictional applicant</button>
+        <p id="intake-role-help" class="small"></p>
+        <div class="receipt"><span class="eyebrow">DUPLICATE-SAFE BY DESIGN</span><p id="receipt">No submission in this session yet.</p><button id="retry" disabled>Replay last submission</button></div>
+        <p class="small">Replay reuses the same key. A changed journey with that key is rejected. No additional case or audit event is created.</p>
+      </section>
+      <section class="panel review" aria-labelledby="queue-title">
+        <div class="section-line"><div><p class="eyebrow">02 / STAFF REVIEW</p><h2 id="queue-title">The decision desk</h2></div><span id="queue-count" class="count"></span></div>
+        <fieldset id="filters" class="filters"><legend class="sr-only">Filter incoming queue</legend>
+          <div><label for="status-filter">Status</label><select id="status-filter"><option value="all">All statuses</option><option value="submitted">Submitted</option><option value="under-review">Under review</option><option value="needs-info">Needs info</option><option value="approved">Approved</option><option value="rejected">Rejected</option></select></div>
+          <div><label for="journey-filter">Journey</label><select id="journey-filter"><option value="all">All journeys</option><option value="new">New</option><option value="returning">Returning</option></select></div>
+          <div><label for="search">Find a demo</label><input id="search" type="search" placeholder="Demo 01 or CASE-001" maxlength="30" autocomplete="off"></div>
+        </fieldset>
+        <div class="desk"><div><p class="list-label">INCOMING QUEUE <span>Oldest first</span></p><div id="queue" class="queue"></div></div>
+        <section id="detail" class="detail" aria-label="Selected case detail"></section></div>
+      </section>
+    </div>
+    <section id="learner-followup" class="panel followup" hidden aria-labelledby="followup-title"><h2 id="followup-title">Fictional follow-up</h2><p>For this role exercise, any needs-info demo can receive a fixed synthetic evidence response. No identity or ownership is simulated.</p><div id="followup-cases"></div></section>
+    <section class="notes" aria-label="How this simulation works">
+      <div><p class="eyebrow">03 / THE CONTRACT</p><h2>Small surface.<br> Explicit rules.</h2><p>One accepted command advances the virtual clock by one minute. Replays and rejected commands leave every record and event unchanged.</p></div>
+      <div><h3>Roles & permissions</h3><p><strong>Learner:</strong> submit, replay, add fixed evidence to needs-info cases.<br><strong>Staff:</strong> read queue and metrics, start review, decide.</p><p>Permissions run in the pure domain engine. The browser owns this simulation; these roles provide no authentication or security boundary.</p></div>
+      <div><h3>Status map</h3><p>Submitted → Under review<br>Under review → Approved / Needs info / Rejected<br>Needs info → Submitted (learner response)</p><p>Approved and rejected are terminal. Decisions use a captured version; stale decisions fail without a partial write.</p></div>
+    </section>
+  </main>
+  <footer class="wrap">Operations Case Lab <span>Original synthetic proof · No production connection</span></footer>
+</body>
+</html>
