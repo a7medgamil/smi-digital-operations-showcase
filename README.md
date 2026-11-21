@@ -26,7 +26,9 @@ The institutional inventory contains **12 named applications and modules**, grou
 - **CRM · Leads** — internal lead records and follow-up.
 - **Outreach** — an engagement workflow embedded in Secondary Training.
 
-See the [eight-domain operating model](docs/OPERATING-MODEL.md), detailed [system inventory](docs/SYSTEM-INVENTORY.md) and [operating architecture](docs/ARCHITECTURE.md). The [SMI institutional portfolio record](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/smi#digital-systems), [digital platform case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-digital-learning-platform) and [Registration Hub case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-registration-hub) present the related portfolio records.
+See the [eight-domain operating model](docs/OPERATING-MODEL.md), detailed [system inventory](docs/SYSTEM-INVENTORY.md) and [operating architecture](docs/ARCHITECTURE.md).
+
+For technical-project and product-management assessment, see the [Product & Delivery Evidence Packet](docs/PRODUCT-DELIVERY-EVIDENCE.md), which distinguishes verified inventory facts, proposed acceptance criteria, missing measurement evidence and privacy constraints. The [SMI institutional portfolio record](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/smi#digital-systems), [digital platform case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-digital-learning-platform) and [Registration Hub case study](https://ahmed-gamil-portfolio.ahmedabdulbarim.workers.dev/case-studies/smi-registration-hub) present the related portfolio records.
 
 ## Public route reachability
 
